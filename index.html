@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK-TECH-ZONE - Download Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0c0e2a 0%, #232750 100%);
+            color: #f1f1f1;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(16, 18, 42, 0.8);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0a0d0;
+            margin-bottom: 20px;
+        }
+        
+        .update-notice {
+            background: rgba(37, 117, 252, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-left: 4px solid #2575fc;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .tool-card {
+            background: rgba(25, 28, 60, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(33, 36, 75, 0.9);
+        }
+        
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+        }
+        
+        .tool-icon img {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .tool-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .tool-desc {
+            font-size: 0.9rem;
+            color: #a0a0d0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(16, 18, 42, 0.8);
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .copyright {
+            font-size: 1rem;
+            color: #a0a0d0;
+            margin-bottom: 10px;
+        }
+        
+        .powered-by {
+            font-size: 0.9rem;
+            color: #6a7c94;
+        }
+        
+        .powered-by a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">DARK-TECH-ZONE</h1>
+            <p class="tagline">Premium Online Tools Source Codes- </p>
+            <div class="update-notice">
+                <i class="fas fa-info-circle"></i> All Tools Source Codes  currently Are Not Available.
+            </div>
+        </header>
+        
+        <div class="tools-grid">
+            <!-- Tool cards will be generated by JavaScript -->
+        </div>
+        
+        <footer>
+            <p class="copyright">© 2023 DARK-TECH-ZONE. All rights reserved.</p>
+            <p class="powered-by">Powered by <a href="#">Hassnain Ali</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // List of tools with their specific links
+        const tools = [
+            { 
+                name: "WhatsApp Ban Tool Source Code", 
+                desc: "Full Working WhatsApp Ban Tool Source Codes",
+                link: "https://www.mediafire.com/file/m2mm4ko9gzv1a17/bansoure.html/file"
+            },
+            { 
+                name: "HTML Live Editor Source Code", 
+                desc: "Edit Your Html Live",
+                link: "https://www.mediafire.com/file/4q7iz03lp2qy5t6/editorsource.html/file"
+            },
+            { 
+                name: "Image Magic Tool Source Code", 
+                desc: "Imagine your Image",
+                link: "https://www.mediafire.com/file/9ou0vbanppfxckg/imagemagicsource.html/file"
+            },
+            { 
+                name: "Sms Bomber Source Code", 
+                desc: "Full Working Sms Bomber Source Code",
+                link: "https://www.mediafire.com/file/a3qlecq829wbu04/sms.html/file"
+            },
+            { 
+                name: "HTML ENCRYPTER", 
+                desc: "HTML Code Encyptor Tool Source Code",
+                link: "https://www.mediafire.com/file/a8j7ymhpgdgitbk/Source.html/file"
+            },
+            { 
+                name: "Teen Paati Hack", 
+                desc: "TeenPatti Hack Source Codes",
+                link: "https://www.mediafire.com/file/bwssslzeiaolt1y/teenpattisource.html/file"
+            },
+            { 
+                name: "WaterMark Tool", 
+                desc: "WaterMark Adder On Image Tool Source Code",
+                link: "https://www.mediafire.com/file/fjrm33jz8p0yb5n/WATERMARK_TOOL.zip.bak/file"
+            },
+            { 
+                name: "YT Free Views", 
+                desc: "YouTube Unlimited Views Tool Source Code",
+                link: "https://www.mediafire.com/file/1g9srgz33n85byj/Ytsource.html/file"
+            },
+            { 
+                name: "Snapchat Video Downloader", 
+                desc: "Download Snapchat stories",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "WhatsApp Video Downloader", 
+                desc: "Save videos from WhatsApp status",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Vimeo Video Downloader", 
+                desc: "Download videos from Vimeo",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Dailymotion Video Downloader", 
+                desc: "Save videos from Dailymotion",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Twitch Video Downloader", 
+                desc: "Download Twitch clips and videos",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "SoundCloud Audio Downloader", 
+                desc: "Save audio from SoundCloud",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Spotify Audio Downloader", 
+                desc: "Download songs from Spotify",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Apple Music Downloader", 
+                desc: "Save music from Apple Music",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "YouTube to MP3 Converter", 
+                desc: "Convert YouTube videos to MP3",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Video Converter", 
+                desc: "Convert videos to various formats",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Image Downloader", 
+                desc: "Download images from any website",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            },
+            { 
+                name: "Website Video Downloader", 
+                desc: "Extract videos from any website",
+                link: "https://whatsapp.com/channel/0029VbBWrHxDOQIa119G8545"
+            }
+        ];
+        
+        const toolsGrid = document.querySelector('.tools-grid');
+        const iconUrl = "https://fak-h.jokerkeep057.workers.dev/YdhwS";
+        
+        // Generate tool cards
+        tools.forEach(tool => {
+            const toolCard = document.createElement('div');
+            toolCard.className = 'tool-card';
+            toolCard.innerHTML = `
+                <div class="tool-icon">
+                    <img src="${iconUrl}" alt="${tool.name} Icon">
+                </div>
+                <h3 class="tool-name">${tool.name}</h3>
+                <p class="tool-desc">${tool.desc}</p>
+            `;
+            
+            // Add click event to redirect
+            toolCard.addEventListener('click', () => {
+                // Add https:// if not present
+                let url = tool.link;
+                if (!url.startsWith('http')) {
+                    url = 'https://' + url;
+                }
+                window.location.href = url;
+            });
+            
+            toolsGrid.appendChild(toolCard);
+        });
+    </script>
+</body>
+</html>
